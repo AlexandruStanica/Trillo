@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon-trillo.png" />
+
+        <title>trillo &mdash; Your all-in-one booking app</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo" />
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search hotels" />
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/alex.jpg" alt="User photo" class="user-nav__user-photo" />
+                        <span class="user-nav__user-name">Alex</span>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li id="tab-1" class="side-nav__item side-nav__item--active">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+
+                        <li id="tab-2" class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span>Flight</span>
+                            </a>
+                        </li>
+
+                        <li id="tab-3" class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span>Car rental</span>
+                            </a>
+                        </li>
+
+                        <li id="tab-4" class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span>Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        Copyright &copy; 2020 by Alexandru Stanica. Website designed by Jonas Schmedtmann.
+                    </div>
+                </nav>
+
+                <main class="hotel-view">
+                    <!-- TAB 1 -->
+                    <div id="tab-1-content" class="tab-content-item show">
+                        <div class="gallery">
+                            <figure class="gallery__item">
+                                <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo" />
+                            </figure>
+                        </div>
+
+                        <div class="overview">
+                            <h1 class="overview__heading">
+                                Hotel Las Palmas
+                            </h1>
+
+                            <div class="overview__stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+
+                            <div class="overview__location">
+                                <svg class="overview__icon-location">
+                                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <button class="btn-inline">Albufeira, Portugal</button>
+                            </div>
+
+                            <div class="overview__rating">
+                                <div class="overview__rating-average">8.6</div>
+                                <div class="overview__rating-count">429 votes</div>
+                            </div>
+                        </div>
+
+                        <div class="detail">
+                            <div class="description">
+                                <p class="paragraph">
+                                    Hotel Las Palmas is located 150 meters from Arruba Beach, in sunny Albufeira,
+                                    Portugal. The location is equipped with its own pool and spa which makes it an ideal
+                                    place for a vacation.
+                                </p>
+                                <p class="paragraph">
+                                    Over 100 rooms with the highest quality furniture are waiting for you! Book now!
+                                </p>
+
+                                <ul class="list">
+                                    <li class="list__item">Close to the beach</li>
+                                    <li class="list__item">Breakfast included</li>
+                                    <li class="list__item">Free airport shuttle</li>
+                                    <li class="list__item">Free Wi-Fi in all rooms</li>
+                                    <li class="list__item">AC and heating</li>
+                                    <li class="list__item">Pets allowed</li>
+                                    <li class="list__item">We speak all languages</li>
+                                    <li class="list__item">Perfect for families</li>
+                                </ul>
+
+                                <div class="recommend">
+                                    <p class="recommend__count">
+                                        Lucy and 3 other friends recommend this hotel.
+                                    </p>
+
+                                    <div class="recommend__friends">
+                                        <img src="img/user-3.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-4.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-5.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-6.jpg" alt="" class="recommend__photo" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-reviews">
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Hotel Las Palmas was a nice experience overall, but one thing that bothered me
+                                        were the inflated prices. For example, I wanted to drink a soda from the fridge
+                                        in my room and it cost me $10!
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-1.jpg" alt="User 1" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Nick Smith</p>
+                                            <p class="review__user-date">Feb 23rd 2020</p>
+                                        </div>
+                                        <div class="review__rating">7.8</div>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Absolutely astonishing! The view was breathtaking and the pool was really nice.
+                                        I would definitely come back when the opportunity arises.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-2.jpg" alt="User 2" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Mary Thomas</p>
+                                            <p class="review__user-date">Sept 13th 2019</p>
+                                        </div>
+                                        <div class="review__rating">9.3</div>
+                                    </figcaption>
+                                </figure>
+
+                                <button class="btn-inline">Show all <span>&rarr;</span></button>
+                            </div>
+                        </div>
+                        <div class="cta">
+                            <h2 class="cta__book-now">
+                                Good news! We have 4 free rooms for your selected dates!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Book now</span>
+                                <span class="btn__invisible"> Only 4 rooms left</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 -->
+                    <div id="tab-2-content" class="tab-content-item">
+                        <div class="gallery">
+                            <figure class="gallery__item">
+                                <img src="img/airplane-1.jpg" alt="Photo of hotel 2" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/airplane-2.jpg" alt="Photo of hotel 2" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/airplane-3.jpg" alt="Photo of hotel 3" class="gallery__photo" />
+                            </figure>
+                        </div>
+
+                        <div class="overview">
+                            <h1 class="overview__heading">
+                                Turkish Airlines
+                            </h1>
+
+                            <div class="overview__stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+
+                            <div class="overview__location">
+                                <svg class="overview__icon-location">
+                                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <button class="btn-inline">Albufeira, Portugal</button>
+                            </div>
+
+                            <div class="overview__rating">
+                                <div class="overview__rating-average">9.1</div>
+                                <div class="overview__rating-count">375 votes</div>
+                            </div>
+                        </div>
+
+                        <div class="detail">
+                            <div class="description">
+                                <p class="paragraph">
+                                    Turkish Airlines provides an absolutely enchanting experience, being one of the
+                                    safest companies in the world. Their objective is to keep customers happy and they
+                                    rarely don't live up to expectations. So don't wait a minute and book you flight
+                                    right now!
+                                </p>
+                                <p class="paragraph">
+                                    Now you can fly not only in your dreams! Fly with us and enjoy awesome services.
+                                </p>
+
+                                <ul class="list">
+                                    <li class="list__item">Current and classic movies</li>
+                                    <li class="list__item">Thousands of songs</li>
+                                    <li class="list__item">Special programs for kids</li>
+                                    <li class="list__item">Internet connection</li>
+                                    <li class="list__item">AC and heating</li>
+                                    <li class="list__item">Pets allowed</li>
+                                    <li class="list__item">We speak all languages</li>
+                                    <li class="list__item">Netflix and chill</li>
+                                </ul>
+
+                                <div class="recommend">
+                                    <p class="recommend__count">
+                                        Anna and 3 other friends recommend this flight.
+                                    </p>
+
+                                    <div class="recommend__friends">
+                                        <img src="img/user-3.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-4.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-5.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-6.jpg" alt="" class="recommend__photo" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-reviews">
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Turkish Airlines offers a wide variety of entertainment during flight which made
+                                        me enjoy every second in the air. I would totally fly with them again.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-1.jpg" alt="User 1" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Nick Smith</p>
+                                            <p class="review__user-date">Feb 23rd 2020</p>
+                                        </div>
+                                        <div class="review__rating">8.9</div>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        I had a 2 hour flight in a Turkish Airlines plane and it was one of the most
+                                        wonderful journeys of my entire life. I will fly with them next time too.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-2.jpg" alt="User 2" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Mary Thomas</p>
+                                            <p class="review__user-date">Sept 13th 2019</p>
+                                        </div>
+                                        <div class="review__rating">9.5</div>
+                                    </figcaption>
+                                </figure>
+
+                                <button class="btn-inline">Show all <span>&rarr;</span></button>
+                            </div>
+                        </div>
+                        <div class="cta">
+                            <h2 class="cta__book-now">
+                                Good news! We have 7 free seats for your selected dates!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Book now</span>
+                                <span class="btn__invisible"> Only 7 seats left</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 -->
+                    <div id="tab-3-content" class="tab-content-item">
+                        <div class="gallery">
+                            <figure class="gallery__item">
+                                <img src="img/car-1.jpg" alt="Photo of hotel 1" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/car-2.jpg" alt="Photo of hotel 2" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/car-3.jpg" alt="Photo of hotel 3" class="gallery__photo" />
+                            </figure>
+                        </div>
+
+                        <div class="overview">
+                            <h1 class="overview__heading">
+                                Luxury Cars
+                            </h1>
+
+                            <div class="overview__stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+
+                            <div class="overview__location">
+                                <svg class="overview__icon-location">
+                                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <button class="btn-inline">Albufeira, Portugal</button>
+                            </div>
+
+                            <div class="overview__rating">
+                                <div class="overview__rating-average">9.2</div>
+                                <div class="overview__rating-count">298 votes</div>
+                            </div>
+                        </div>
+
+                        <div class="detail">
+                            <div class="description">
+                                <p class="paragraph">
+                                    Albufeira Motors welcomes you with over 30 models of supercars from which you can
+                                    choose. Live an amazing experience driving probably the best car you'll ever see.
+                                    What are you waiting? Rent a car now!
+                                </p>
+                                <p class="paragraph">
+                                    Car prices start at $20/hour and can go up to $50/hour depending on the model you
+                                    choose.
+                                </p>
+
+                                <ul class="list">
+                                    <li class="list__item">Close to the beach</li>
+                                    <li class="list__item">Breakfast included</li>
+                                    <li class="list__item">Free airport shuttle</li>
+                                    <li class="list__item">Free Wi-Fi in all rooms</li>
+                                    <li class="list__item">AC and heating</li>
+                                    <li class="list__item">Pets allowed</li>
+                                    <li class="list__item">We speak all languages</li>
+                                    <li class="list__item">Perfect for families</li>
+                                </ul>
+
+                                <div class="recommend">
+                                    <p class="recommend__count">
+                                        George and 3 other friends recommend this service.
+                                    </p>
+
+                                    <div class="recommend__friends">
+                                        <img src="img/user-3.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-4.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-5.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-6.jpg" alt="" class="recommend__photo" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-reviews">
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                                        architecto dicta animi, totam, itaque officia ex.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-1.jpg" alt="User 1" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Nick Smith</p>
+                                            <p class="review__user-date">Feb 23rd 2020</p>
+                                        </div>
+                                        <div class="review__rating">8.3</div>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                                        architecto dicta animi.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-2.jpg" alt="User 2" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Mary Thomas</p>
+                                            <p class="review__user-date">Sept 13th 2019</p>
+                                        </div>
+                                        <div class="review__rating">9.8</div>
+                                    </figcaption>
+                                </figure>
+
+                                <button class="btn-inline">Show all <span>&rarr;</span></button>
+                            </div>
+                        </div>
+                        <div class="cta">
+                            <h2 class="cta__book-now">
+                                Good news! We have 5 more cars for your selected dates!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Book now</span>
+                                <span class="btn__invisible"> Only 5 cars left</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- TAB 4 -->
+                    <div id="tab-4-content" class="tab-content-item">
+                        <div class="gallery">
+                            <figure class="gallery__item">
+                                <img src="img/tour-1.jpg" alt="Photo of hotel 1" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/tour-2.jpg" alt="Photo of hotel 2" class="gallery__photo" />
+                            </figure>
+
+                            <figure class="gallery__item">
+                                <img src="img/tour-3.jpg" alt="Photo of hotel 3" class="gallery__photo" />
+                            </figure>
+                        </div>
+
+                        <div class="overview">
+                            <h1 class="overview__heading">
+                                Amazing tours
+                            </h1>
+
+                            <div class="overview__stars">
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                                <svg class="overview__icon-star">
+                                    <use xlink:href="img/sprite.svg#icon-star"></use>
+                                </svg>
+                            </div>
+
+                            <div class="overview__location">
+                                <svg class="overview__icon-location">
+                                    <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                                </svg>
+                                <button class="btn-inline">Albufeira, Portugal</button>
+                            </div>
+
+                            <div class="overview__rating">
+                                <div class="overview__rating-average">8.7</div>
+                                <div class="overview__rating-count">501 votes</div>
+                            </div>
+                        </div>
+
+                        <div class="detail">
+                            <div class="description">
+                                <p class="paragraph">
+                                    Tours with experienced guides await you in Albufeira so you can see the most amazing
+                                    places nearby. Discover the secrets of the city with local guides with over 10 years
+                                    of experience in leading groups
+                                </p>
+                                <p class="paragraph">
+                                    For every 3 tours purchased, you receive one as a gift from us so you can enjoy even
+                                    more in your holiday.
+                                </p>
+
+                                <ul class="list">
+                                    <li class="list__item">Close to the beach</li>
+                                    <li class="list__item">Breakfast included</li>
+                                    <li class="list__item">Free airport shuttle</li>
+                                    <li class="list__item">Free Wi-Fi in all rooms</li>
+                                    <li class="list__item">AC and heating</li>
+                                    <li class="list__item">Pets allowed</li>
+                                    <li class="list__item">We speak all languages</li>
+                                    <li class="list__item">Perfect for families</li>
+                                </ul>
+
+                                <div class="recommend">
+                                    <p class="recommend__count">
+                                        Lucy and 3 other friends recommend this hotel.
+                                    </p>
+
+                                    <div class="recommend__friends">
+                                        <img src="img/user-3.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-4.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-5.jpg" alt="" class="recommend__photo" />
+                                        <img src="img/user-6.jpg" alt="" class="recommend__photo" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="user-reviews">
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                                        architecto dicta animi, totam, itaque officia ex.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-1.jpg" alt="User 1" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Nick Smith</p>
+                                            <p class="review__user-date">Feb 23rd 2020</p>
+                                        </div>
+                                        <div class="review__rating">7.8</div>
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="review">
+                                    <blockquote class="review__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque
+                                        architecto dicta animi.
+                                    </blockquote>
+                                    <figcaption class="review__user">
+                                        <img src="img/user-2.jpg" alt="User 2" class="review__photo" />
+                                        <div class="review__user-box">
+                                            <p class="review__user-name">Mary Thomas</p>
+                                            <p class="review__user-date">Sept 13th 2019</p>
+                                        </div>
+                                        <div class="review__rating">9.3</div>
+                                    </figcaption>
+                                </figure>
+
+                                <button class="btn-inline">Show all <span>&rarr;</span></button>
+                            </div>
+                        </div>
+                        <div class="cta">
+                            <h2 class="cta__book-now">
+                                Good news! We have 10 more tours for your selected dates!
+                            </h2>
+                            <button class="btn">
+                                <span class="btn__visible">Book now</span>
+                                <span class="btn__invisible"> Only 10 tours left</span>
+                            </button>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
